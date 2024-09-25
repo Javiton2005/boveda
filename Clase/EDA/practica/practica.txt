@@ -1,0 +1,40 @@
+Normas importantes:
+  return (0); #parentesis importantes.
+
+i,j,k,l,m son variables contadores.
+
+Num_lib esta mal no esta claro
+NumeroLibros
+const NUMEROLIBROS
+
+funciones, se escriben en un fichero llamado con el nombre de la {Nombre de funcion}.c
+
+tipos de variables:
+  
+  -globales  se definen como globales.c 
+    int Numero1;
+
+    Usar extern int Numero1;
+
+  -locales
+    Funcion()
+    {
+      # Cada vez que entra la direccion de memoria se cambia.
+      int j;
+      j = 4;
+      return;
+    }
+    
+    Funcion()
+    {
+      # si queremos que se guarde en el mismo lugar de memoria.
+      static int j;
+      j=4;
+      return;
+    }
+  -bloque
+    for(int i = 0;...){
+
+    }
+
+    #no se usan se usan locales y a tomar por cu

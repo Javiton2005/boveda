@@ -1,0 +1,24 @@
+# file opened: C:\Users\javit\Documents\2-carrera\ARCO\AOC_MainFolder\Lab_0\Template_Lab_0.asm
+ 1    0000                      DEVICE ZXSPECTRUM48
+ 2    0000              	SLDOPT COMMENT WPMEM, LOGPOINT, ASSERTION
+ 3    0000                      org $8000               ; Program is located from memory address $8000 = 32768
+ 4    8000
+ 5    8000 F3           begin:          di              ; Disable Interrupts
+ 6    8001 31 00 00                     ld sp,0         ; Set stack pointer to top of ram (RAMTOP)
+ 7    8004
+ 8    8004              ;-------------------------------------------------------------------------------------------------
+ 9    8004              ; Student Code
+10    8004
+11    8004              mainloop:
+12    8004 3E 01                ld a, 1
+13    8006 06 FF                ld b, -1
+14    8008 80                   add b
+15    8009 D3 FE                out ($fe),a
+16    800B
+17    800B
+18    800B 18 F7                jr mainloop
+19    800D
+20    800D              ;-------------------------------------------------------------------------------------------------
+21    800D 18 FE        endofcode:      jr endofcode    ; Infinite loop
+22    800F
+# file closed: C:\Users\javit\Documents\2-carrera\ARCO\AOC_MainFolder\Lab_0\Template_Lab_0.asm

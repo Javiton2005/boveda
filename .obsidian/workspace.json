@@ -1,0 +1,181 @@
+{
+  "main": {
+    "id": "9e31c17917077150",
+    "type": "split",
+    "children": [
+      {
+        "id": "ef3e4c53d5bd7c63",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fc156da457af60e4",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clase/ADSI/Untitled.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "1d9c4d577b785546",
+    "type": "split",
+    "children": [
+      {
+        "id": "5e9722584801b4c5",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "45906a89e707e846",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "e743f3c94a8232f9",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "pdf",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          },
+          {
+            "id": "f00b64ee541897f9",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {}
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "7aa8b9c82780db22",
+    "type": "split",
+    "children": [
+      {
+        "id": "de5689f1036ede66",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "ef333c5de76e276f",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Clase/ADSI/Untitled.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "a306d19d7edc4ada",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Clase/ADSI/Untitled.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "9a65bba17fd2e085",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              }
+            }
+          },
+          {
+            "id": "4dfab2fb49abb084",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Clase/ADSI/Untitled.md"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir selector rápido": false,
+      "graph:Abrir vista gráfica": false,
+      "canvas:Crear nuevo lienzo": false,
+      "daily-notes:Abrir la nota de hoy": false,
+      "templates:Insertar plantilla": false,
+      "command-palette:Abrir paleta de comandos": false
+    }
+  },
+  "active": "fc156da457af60e4",
+  "lastOpenFiles": [
+    "Clase/Antropology/First class.md",
+    "Clase/ARCO/exercice 1/Exercices.md",
+    "Clase/ARCO/Exercices.md",
+    "Clase/ARCO/exercice 1/AOC_PB_1_EN.pdf",
+    "Clase/ARCO/Primera practica.md",
+    "Clase/EDA/teoria/Punteros.md",
+    "Clase/EDA/teoria/Memoria en C.md",
+    "Clase/EDA/teoria/Introdución a C.md",
+    "Clase/ADSI/Untitled.md",
+    "2024-09-25.md",
+    "Clase/ADSI",
+    "Asembly.md",
+    "Clase/Antropology",
+    "Apuntes/C/Inicio.md",
+    "Clase/ARCO",
+    "C.md",
+    "Apuntes/C.md",
+    "Apuntes/C",
+    "template/Apuntes.md",
+    "Apuntes",
+    "template/School note template.md",
+    "template/Business idea.md",
+    "Business",
+    "P_EDA.md",
+    "Clase/EDA",
+    "Clase",
+    "template/Sin título.canvas",
+    "Bienvenido.md",
+    "template"
+  ]
+}

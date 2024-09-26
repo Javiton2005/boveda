@@ -29,10 +29,22 @@ void segundaIteracion(){
     endwin();
 }
 
+void terceraIteracion(){
+  initscr();
+  WINDOW *win = newwin(255,255,255,255);
+  refresh();
+  for(int i=0; i<=255; i++){
+    mvwprintw(win,i,0,"%d\n",i);
+  }
+  wrefresh(win);
+  getch();
+  endwin();
+}
 
 void main()
 {
     //primeraIteracion;
-    segundaIteracion();
+    //segundaIteracion();
+    terceraIteracion(); 
 }
 

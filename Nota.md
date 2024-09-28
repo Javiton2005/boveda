@@ -1,0 +1,1 @@
+Esto es una nota para [[Atajos Obsidian]]

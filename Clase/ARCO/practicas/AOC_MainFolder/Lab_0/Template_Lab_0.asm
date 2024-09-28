@@ -7,15 +7,12 @@ begin:          di              ; Disable Interrupts
         
 ;-------------------------------------------------------------------------------------------------
 ; Student Code
-
+        ld a, 7
 mainloop:
-        ld a, 1
-        ld b, -1
-        add b
-        out ($fe),a
-
-
-        jr mainloop
-
+;memoria en la que empieza en el 5800
+        out ($), a
+        jr z, endofcode
+        dec a
+        jr mainloop  
 ;-------------------------------------------------------------------------------------------------
 endofcode:      jr endofcode    ; Infinite loop

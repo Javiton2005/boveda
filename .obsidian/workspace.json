@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "ef3e4c53d5bd7c63",
+        "id": "113695322ebfa6ea",
         "type": "tabs",
         "children": [
           {
-            "id": "fc156da457af60e4",
+            "id": "a9c90cb6596e8e21",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clase/ADSI/Untitled.md",
+                "file": "Clase/ARCO/Basic instructions.md",
                 "mode": "source",
                 "source": false
               }
@@ -38,7 +38,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTimeReverse"
               }
             }
           },
@@ -80,32 +80,11 @@
         "type": "tabs",
         "children": [
           {
-            "id": "ef333c5de76e276f",
+            "id": "be84c1d86e168090",
             "type": "leaf",
             "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Clase/ADSI/Untitled.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "a306d19d7edc4ada",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Clase/ADSI/Untitled.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
+              "type": "graph",
+              "state": {}
             }
           },
           {
@@ -120,12 +99,82 @@
             }
           },
           {
-            "id": "4dfab2fb49abb084",
+            "id": "b4ed40e18173ab28",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Clase/ARCO/Basic instructions.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d689c3731725aab3",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Clase/ARCO/Basic instructions.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          },
+          {
+            "id": "d55000e883a154d6",
             "type": "leaf",
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clase/ADSI/Untitled.md"
+                "file": "Clase/ARCO/Basic instructions.md"
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "cd567a395229ca95",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1426b72e05f7fe78",
+            "type": "leaf",
+            "state": {
+              "type": "localgraph",
+              "state": {
+                "file": "Clase/ARCO/Basic instructions.md",
+                "options": {
+                  "collapse-filter": true,
+                  "search": "",
+                  "localJumps": 1,
+                  "localBacklinks": true,
+                  "localForelinks": true,
+                  "localInterlinks": false,
+                  "showTags": false,
+                  "showAttachments": false,
+                  "hideUnresolved": false,
+                  "collapse-color-groups": true,
+                  "colorGroups": [],
+                  "collapse-display": true,
+                  "showArrow": false,
+                  "textFadeMultiplier": 0,
+                  "nodeSizeMultiplier": 1,
+                  "lineSizeMultiplier": 1,
+                  "collapse-forces": true,
+                  "centerStrength": 0.518713248970312,
+                  "repelStrength": 10,
+                  "linkStrength": 1,
+                  "linkDistance": 250,
+                  "scale": 1,
+                  "close": true
+                }
               }
             }
           }
@@ -133,49 +182,56 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 412.5
   },
   "left-ribbon": {
     "hiddenItems": {
-      "switcher:Abrir selector rápido": false,
-      "graph:Abrir vista gráfica": false,
-      "canvas:Crear nuevo lienzo": false,
-      "daily-notes:Abrir la nota de hoy": false,
-      "templates:Insertar plantilla": false,
-      "command-palette:Abrir paleta de comandos": false
+      "graph:Open graph view": false,
+      "switcher:Open quick switcher": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
     }
   },
-  "active": "fc156da457af60e4",
+  "active": "a9c90cb6596e8e21",
   "lastOpenFiles": [
-    "Clase/Antropology/First class.md",
+    "Clase/ARCO/Basic instructions.md",
     "Clase/ARCO/exercice 1/Exercices.md",
+    "Clase/ARCO/Primera practica.md",
+    "Clase/ARCO/Arco.md",
+    "web/Tablas.md",
+    "2024-09-26.md",
+    "Eda.md",
+    "Clase/EDA/teoria/Punteros.md",
+    "web",
+    "Clase/EDA/teoria/Memoria en C.md",
+    "Atajos Obsidian.md",
+    "2024-09-25.md",
+    "Nota.md",
+    "Apuntes/C/Inicio.md",
+    "C.md",
+    "P_EDA.md",
+    "Clase/ADSI/Primera clase.md",
+    "Nora.md",
+    "NAME.md",
+    "template/Apuntes.md",
+    "Clase/Antropology/First class.md",
     "Clase/ARCO/Exercices.md",
     "Clase/ARCO/exercice 1/AOC_PB_1_EN.pdf",
-    "Clase/ARCO/Primera practica.md",
-    "Clase/EDA/teoria/Punteros.md",
-    "Clase/EDA/teoria/Memoria en C.md",
     "Clase/EDA/teoria/Introdución a C.md",
-    "Clase/ADSI/Untitled.md",
-    "2024-09-25.md",
     "Clase/ADSI",
     "Asembly.md",
     "Clase/Antropology",
-    "Apuntes/C/Inicio.md",
     "Clase/ARCO",
-    "C.md",
     "Apuntes/C.md",
     "Apuntes/C",
-    "template/Apuntes.md",
     "Apuntes",
     "template/School note template.md",
     "template/Business idea.md",
     "Business",
-    "P_EDA.md",
     "Clase/EDA",
     "Clase",
-    "template/Sin título.canvas",
-    "Bienvenido.md",
-    "template"
+    "template/Sin título.canvas"
   ]
 }

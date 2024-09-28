@@ -1,5 +1,10 @@
 {
   "showLineNumber": true,
   "rightToLeft": true,
-  "readableLineLength": true
+  "readableLineLength": true,
+  "showInlineTitle": false,
+  "newFileLocation": "current",
+  "promptDelete": false,
+  "autoConvertHtml": true,
+  "strictLineBreaks": true
 }

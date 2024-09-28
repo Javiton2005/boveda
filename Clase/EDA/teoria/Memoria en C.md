@@ -1,7 +1,7 @@
 Tema: [[Eda]]
 Apartado: #apuntes
 
-## Apuntes:
+## Memoria en C:
 ---
 ```c
 #include <stdlib.h>

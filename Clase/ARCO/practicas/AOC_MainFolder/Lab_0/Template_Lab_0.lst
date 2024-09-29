@@ -8,14 +8,51 @@
  7    8004
  8    8004              ;-------------------------------------------------------------------------------------------------
  9    8004              ; Student Code
-10    8004 3E 07                ld a, 7
-11    8006              mainloop:
-C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Lab_0\Template_Lab_0.asm(12): warning: value 0x5832 is truncated to 8bit value: 0x32
-12    8006 D3 32                out ($5832), a
-13    8008 28 03                jr z, endofcode
-14    800A 3D                   dec a
-15    800B 18 F9                jr mainloop
-16    800D              ;-------------------------------------------------------------------------------------------------
-17    800D 18 FE        endofcode:      jr endofcode    ; Infinite loop
-18    800F
+10    8004 C3 0C 80             jp start
+11    8007              string:
+12    8007 68 65 6C 6C          db "hello"
+12    800B 6F
+13    800C              STRING_LENGTH = 5
+14    800C
+15    800C              ROM_CLS         = $0DAF
+16    800C              COLOR_ATTR      = $5800
+17    800C              ENTER           = $0D
+18    800C              BLACK_WHITE     = $47
+19    800C              start:
+20    800C ED 56                im 1
+21    800E CD AF 0D             call ROM_CLS
+22    8011 21 07 80             ld hl, string
+23    8014 06 05                ld b, STRING_LENGTH
+24    8016              loop:
+25    8016 7E                   ld a, (hl)
+26    8017 D7                   rst $10
+27    8018 23                   inc hl
+28    8019 05                   dec b
+29    801A 20 FA                jr nz, loop
+30    801C 3E 0D                ld a, ENTER
+31    801E D7                   rst $10
+32    801F
+33    801F 3E 47                ld a, BLACK_WHITE
+34    8021 32 47 00             ld (BLACK_WHITE),a
+35    8024
+36    8024 DD 21 07 80          ld ix, string
+37    8028 DD CB 00 AE          res 5,(ix)
+38    802C DD 7E 00             ld a,(ix)
+39    802F D7                   rst $10
+40    8030 DD 7E 01             ld a,(ix+1)
+41    8033 D7                   rst $10
+42    8034 DD 7E 02             ld a,(ix+2)
+43    8037 D7                   rst $10
+44    8038 DD 7E 03             ld a,(ix+3)
+45    803B D7                   rst $10
+46    803C DD 7E 04             ld a,(ix+4)
+47    803F D7                   rst $10
+48    8040 3E 0D                ld a,ENTER
+49    8042 D7                   rst $10
+50    8043
+51    8043
+52    8043 C9                   ret
+53    8044              ;-------------------------------------------------------------------------------------------------
+54    8044 18 FE        endofcode:      jr endofcode    ; Infinite loop
+55    8046
 # file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Lab_0\Template_Lab_0.asm

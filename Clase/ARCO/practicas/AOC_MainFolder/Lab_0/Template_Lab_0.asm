@@ -7,12 +7,48 @@ begin:          di              ; Disable Interrupts
         
 ;-------------------------------------------------------------------------------------------------
 ; Student Code
-        ld a, 7
-mainloop:
-;memoria en la que empieza en el 5800
-        out ($), a
-        jr z, endofcode
-        dec a
-        jr mainloop  
+        jp start
+string:
+        db "hello"
+STRING_LENGTH = 5
+
+ROM_CLS         = $0DAF
+COLOR_ATTR      = $5800
+ENTER           = $0D
+BLACK_WHITE     = $47
+start: 
+        im 1
+        call ROM_CLS
+        ld hl, string
+        ld b, STRING_LENGTH
+loop:
+        ld a, (hl)
+        rst $10
+        inc hl
+        dec b
+        jr nz, loop
+        ld a, ENTER
+        rst $10
+
+        ld a, BLACK_WHITE
+        ld (BLACK_WHITE),a
+
+        ld ix, string
+        res 5,(ix)
+        ld a,(ix)
+        rst $10
+        ld a,(ix+1)
+        rst $10
+        ld a,(ix+2)
+        rst $10
+        ld a,(ix+3)
+        rst $10
+        ld a,(ix+4)
+        rst $10
+        ld a,ENTER
+        rst $10
+
+
+        ret
 ;-------------------------------------------------------------------------------------------------
 endofcode:      jr endofcode    ; Infinite loop

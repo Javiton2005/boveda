@@ -4,11 +4,35 @@
     "type": "split",
     "children": [
       {
-        "id": "113695322ebfa6ea",
+        "id": "330a534802569d53",
         "type": "tabs",
         "children": [
           {
-            "id": "a9c90cb6596e8e21",
+            "id": "c055624e8db89c11",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clase/ARCO/Primera practica.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "d3052b3e8ed87535",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Clase/ARCO/Apuntes casa zx80.md",
+                "mode": "source",
+                "source": false
+              }
+            }
+          },
+          {
+            "id": "bfc184660b923bc0",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -19,7 +43,8 @@
               }
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "vertical"
@@ -80,7 +105,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "be84c1d86e168090",
+            "id": "6a834f9571016cb2",
             "type": "leaf",
             "state": {
               "type": "graph",
@@ -104,7 +129,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clase/ARCO/Basic instructions.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -121,7 +145,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Clase/ARCO/Basic instructions.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -132,9 +155,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Clase/ARCO/Basic instructions.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -149,7 +170,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Clase/ARCO/Basic instructions.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -182,7 +202,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 412.5
+    "width": 497.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -194,11 +214,15 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a9c90cb6596e8e21",
+  "active": "6a834f9571016cb2",
   "lastOpenFiles": [
+    "Clase/ARCO/Apuntes casa zx80.md",
     "Clase/ARCO/Basic instructions.md",
-    "Clase/ARCO/exercice 1/Exercices.md",
     "Clase/ARCO/Primera practica.md",
+    "Clase/ARCO/exercice 1/Exercices.md",
+    "Clase/ARCO/exercice 1/AOC_PB_1_EN.pdf",
+    "Untitled.canvas",
+    "ARCO.md",
     "Clase/ARCO/Arco.md",
     "web/Tablas.md",
     "2024-09-26.md",
@@ -218,7 +242,6 @@
     "template/Apuntes.md",
     "Clase/Antropology/First class.md",
     "Clase/ARCO/Exercices.md",
-    "Clase/ARCO/exercice 1/AOC_PB_1_EN.pdf",
     "Clase/EDA/teoria/Introdución a C.md",
     "Clase/ADSI",
     "Asembly.md",
@@ -227,8 +250,6 @@
     "Apuntes/C.md",
     "Apuntes/C",
     "Apuntes",
-    "template/School note template.md",
-    "template/Business idea.md",
     "Business",
     "Clase/EDA",
     "Clase",

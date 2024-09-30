@@ -1,0 +1,55 @@
+# file opened: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm
+ 1    0000                      DEVICE ZXSPECTRUM48
+ 2    0000              	SLDOPT COMMENT WPMEM, LOGPOINT, ASSERTION
+ 3    0000                      org $8000               ; Program is located from memory address $8000 = 32768
+ 4    8000
+ 5    8000 F3           begin:          di              ; Disable Interrupts
+ 6    8001 31 00 00                     ld sp,0         ; Set stack pointer to top of ram (RAMTOP)
+ 7    8004
+ 8    8004              ;-------------------------------------------------------------------------------------------------
+ 9    8004              ; Student Code
+10    8004 C3 0C 80             jp start
+11    8007              string:
+12    8007 68 65 6C 6C          db "hello"
+12    800B 6F
+13    800C              STRING_LENGTH = 5
+14    800C
+15    800C              ROM_CLS         = $0DAF
+16    800C              COLOR_ATTR      = $5800
+17    800C              ENTER           = $0D
+18    800C              BLACK_WHITE     = $47
+19    800C              start:
+20    800C ED 56                im 1
+21    800E CD AF 0D             call ROM_CLS
+22    8011 21 07 80             ld hl, string
+23    8014 06 05                ld b, STRING_LENGTH
+24    8016              loop:
+25    8016 7E                   ld a, (hl)
+26    8017 D7                   rst $10
+27    8018 23                   inc hl
+28    8019 05                   dec b
+29    801A 20 FA                jr nz, loop
+30    801C 3E 0D                ld a, ENTER
+31    801E D7                   rst $10
+32    801F
+33    801F 3E 47                ld a, BLACK_WHITE
+34    8021 32 47 00             ld (BLACK_WHITE),a
+35    8024
+36    8024 DD 21 07 80          ld ix, string
+37    8028 DD CB 00 AE          res 5,(ix)
+38    802C DD 7E 00             ld a,(ix)
+39    802F D7                   rst $10
+40    8030 DD 7E 01             ld a,(ix+1)
+41    8033 D7                   rst $10
+42    8034 DD 7E 02             ld a,(ix+2)
+43    8037 D7                   rst $10
+44    8038 DD 7E 03             ld a,(ix+3)
+45    803B D7                   rst $10
+46    803C DD 7E 04             ld a,(ix+4)
+47    803F D7                   rst $10
+48    8040 3E 0D                ld a,ENTER
+49    8042 D7                   rst $10
+50    8043              ;-------------------------------------------------------------------------------------------------
+51    8043 18 FE        endofcode:      jr endofcode    ; Infinite loop
+52    8045
+# file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm

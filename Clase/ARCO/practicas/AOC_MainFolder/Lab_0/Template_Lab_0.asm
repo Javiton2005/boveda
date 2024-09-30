@@ -7,48 +7,16 @@ begin:          di              ; Disable Interrupts
         
 ;-------------------------------------------------------------------------------------------------
 ; Student Code
-        jp start
-string:
-        db "hello"
-STRING_LENGTH = 5
 
-ROM_CLS         = $0DAF
-COLOR_ATTR      = $5800
-ENTER           = $0D
-BLACK_WHITE     = $47
-start: 
-        im 1
-        call ROM_CLS
-        ld hl, string
-        ld b, STRING_LENGTH
-loop:
-        ld a, (hl)
-        rst $10
-        inc hl
-        dec b
-        jr nz, loop
-        ld a, ENTER
-        rst $10
+    
 
-        ld a, BLACK_WHITE
-        ld (BLACK_WHITE),a
-
-        ld ix, string
-        res 5,(ix)
-        ld a,(ix)
-        rst $10
-        ld a,(ix+1)
-        rst $10
-        ld a,(ix+2)
-        rst $10
-        ld a,(ix+3)
-        rst $10
-        ld a,(ix+4)
-        rst $10
-        ld a,ENTER
-        rst $10
-
-
-        ret
+mainloop:
+    ld a ,1 ;$3E01
+    out($fe), a
+    ld a ,3
+    out($fe), a
+    ld a, 2
+    out($fe), a
+    jp mainloop
 ;-------------------------------------------------------------------------------------------------
 endofcode:      jr endofcode    ; Infinite loop

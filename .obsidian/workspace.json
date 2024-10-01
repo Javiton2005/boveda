@@ -13,19 +13,19 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clase/ARCO/Apuntes casa zx80.md",
+                "file": "Clase/EDA/teoria/Memoria en C.md",
                 "mode": "source",
                 "source": false
               }
             }
           },
           {
-            "id": "d922fb98499c4004",
+            "id": "ba1fec6935604c15",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clase/ARCO/Topic 2.md",
+                "file": "Clase/EDA/teoria/Punteros.md",
                 "mode": "source",
                 "source": false
               }
@@ -112,42 +112,11 @@
             }
           },
           {
-            "id": "b4ed40e18173ab28",
-            "type": "leaf",
-            "state": {
-              "type": "backlink",
-              "state": {
-                "file": "Clase/ARCO/Topic 2.md",
-                "collapseAll": false,
-                "extraContext": false,
-                "sortOrder": "alphabetical",
-                "showSearch": false,
-                "searchQuery": "",
-                "backlinkCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
-            "id": "d689c3731725aab3",
-            "type": "leaf",
-            "state": {
-              "type": "outgoing-link",
-              "state": {
-                "file": "Clase/ARCO/Topic 2.md",
-                "linksCollapsed": false,
-                "unlinkedCollapsed": true
-              }
-            }
-          },
-          {
             "id": "d55000e883a154d6",
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "Clase/ARCO/Topic 2.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -162,7 +131,6 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Clase/ARCO/Topic 2.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -207,14 +175,18 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d922fb98499c4004",
+  "active": "6a834f9571016cb2",
   "lastOpenFiles": [
+    "Clase/EDA/teoria/Punteros.md",
+    "Clase/EDA/teoria/Memoria en C.md",
+    "Apuntes/C/Inicio.md",
+    "Clase/EDA/teoria/Untitled.md",
+    "Clase/ARCO/Apuntes casa zx80.md",
+    "Clase/ARCO/Topic 2.md",
     "Clase/ARCO/practicas/AOC_MainFolder/Codigo Casa/Codigo_casa.bin",
     "Clase/ARCO/practicas/AOC_MainFolder/Codigo Casa/Codigo_casa.sld",
     "Clase/ARCO/practicas/AOC_MainFolder/Codigo Casa/Codigo_casa.lst",
-    "Clase/ARCO/Topic 2.md",
     "ARCO.md",
-    "Clase/ARCO/Apuntes casa zx80.md",
     "Clase/ARCO/practicas/AOC_MainFolder/Codigo Casa/Codigo_casa.asm",
     "Clase/ARCO/Primera practica.md",
     "Clase/ARCO/Basic instructions.md",
@@ -225,13 +197,10 @@
     "web/Tablas.md",
     "2024-09-26.md",
     "Eda.md",
-    "Clase/EDA/teoria/Punteros.md",
     "web",
-    "Clase/EDA/teoria/Memoria en C.md",
     "Atajos Obsidian.md",
     "2024-09-25.md",
     "Nota.md",
-    "Apuntes/C/Inicio.md",
     "C.md",
     "P_EDA.md",
     "Clase/ADSI/Primera clase.md",
@@ -245,7 +214,6 @@
     "Clase/Antropology",
     "Clase/ARCO",
     "Apuntes/C",
-    "Apuntes",
     "template/Sin título.canvas"
   ]
 }

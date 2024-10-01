@@ -23,7 +23,7 @@ int *num2;  num2 -->0f560[   ]
 
 Definir TCiudad
 ```c
-typedef struct{                 ----------------------¬
+typedef struct{                 ----------------------
   char Nombre[50];              | Nombre    |         |
   char Pais[50];                | Pais      | TCiudad |
   char Continente[50];          | Continente|         |
@@ -47,3 +47,14 @@ Imprimimos
 Manejo de punteros.
 
   Imp por que es el uso dinámico de memoria.
+ 
+### Dobles Punteros
+
+```c
+char **TodosNombresCompProf;
+char *NimbreCompletoProf;
+```
+ 2f20 [3460] TodosNombreProf 
+ 3560 [25F0]                               25F0 [char]        2650 [char] NombreCompProf
+	  [2650]                                       [char]                 [char] 
+

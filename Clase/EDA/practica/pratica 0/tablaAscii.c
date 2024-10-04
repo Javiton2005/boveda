@@ -67,11 +67,11 @@ void main() {
             // Usar color blanco para los demás
             attron(COLOR_PAIR(1));
         }
-
         printw("%d\t%c\n", i, i);  // Imprimir el código ASCII y su carácter
 
         // Desactivar cualquier atributo después de imprimir el carácter
         attroff(COLOR_PAIR(1) | COLOR_PAIR(2) | A_BOLD);
+        
         if (i%40==0 && i!=0 ){
           getch();
           clear();

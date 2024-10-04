@@ -15,6 +15,4 @@ void DibujarLibro(WINDOW *Wlibro)
         
     //Código del alumno
 
-    Cuadrado(Wlibro, 0, 0, 20, 20, '-');
-    wrefresh(Wlibro);
 }

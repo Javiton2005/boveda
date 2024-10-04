@@ -13,7 +13,13 @@
 
 void DibujarLeerAutor(WINDOW *Wautor)
 {
+    int filas, columnas;
+    getmaxyx(Wautor, filas, columnas);
     
-    //Código del alumno
-    
+    Cuadrado(Wautor, 1,0,filas-1,columnas, SOLIDO);
+    start_color(); 
+    wbkgd(Wautor, COLOR_PAIR(9));
+
+    mvwprintw(Wautor, 2, 2, "Apellidos del Autor:");
+    mvwaddstr(Wautor, 0, 28, "Busqueda por Autor");
 }

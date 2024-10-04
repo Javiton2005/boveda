@@ -35,3 +35,8 @@ out($fe), a
 - DEC decrement 1
 
 ### Addressing modes
+
+data could be in 3 places.
+- Instruction Data - Immediate or literal
+- Data in the register 
+- 

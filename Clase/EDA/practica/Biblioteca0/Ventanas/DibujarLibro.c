@@ -13,6 +13,31 @@
 void DibujarLibro(WINDOW *Wlibro)
 {
         
-    //Código del alumno
+    int filas, columnas;
+    char frases[7][20] = {
+        "Numero de Libro:",
+        "Titulo del Libro:",
+        "Apellidos del Autor:",
+        "Nombre del Autor:",
+        "Genero del Libro:",
+        "Editorial del Libro:",
+        "Coleccion del Libro:",
+    };
+    
+    start_color(); 
+
+    wbkgd(Wlibro, COLOR_PAIR(9));
+    
+    mvwaddstr(Wlibro, 0, 29, "Gestion de Libros");
+    
+    getmaxyx(Wlibro, filas, columnas);
+    
+    Cuadrado(Wlibro, 1,0,filas-1,columnas, SOLIDO);
+    
+    int i = 0;
+    for (i = 0; i < 7; i++){
+        mvwprintw(Wlibro, i+2, 2, frases[i]);
+    }
+
 
 }

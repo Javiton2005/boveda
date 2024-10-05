@@ -24,17 +24,7 @@ void Cuadrado(WINDOW *Wventana,int y, int x, int lineas, int columnas, char tipo
     */
     char linea[7];  // Declara 'linea' fuera de los condicionales
 
-    if (tipo) {
-        // Raya simple
-        linea[0] = '+'; 
-        linea[1] = '-'; 
-        linea[2] = '+'; 
-        linea[3] = '|';
-        linea[4] = '+'; 
-        linea[5] = '+'; 
-        linea[6] = 0;
-    } 
-    else {
+    if (tipo == SOLIDO) {
         wattron(Wventana, A_ALTCHARSET);
 
         // Dos rayas
@@ -45,6 +35,17 @@ void Cuadrado(WINDOW *Wventana,int y, int x, int lineas, int columnas, char tipo
         linea[4] = 77; // 77 esquina abajo izq
         linea[5] = 74; // 74 esquina abajo der
         linea[6] = 0;
+    } 
+    else {
+        // Raya simple
+        linea[0] = '+'; 
+        linea[1] = '-'; 
+        linea[2] = '+'; 
+        linea[3] = '|';
+        linea[4] = '+'; 
+        linea[5] = '+'; 
+        linea[6] = 0;
+        
     }
 
     int i = 0, j = 0;

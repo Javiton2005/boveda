@@ -47,13 +47,14 @@ void Cuadrado(WINDOW *Wventana,int y, int x, int lineas, int columnas, char tipo
         linea[6] = 0;
         
     }
-
+    // Bucle de para las paredes del cuadrado
     int i = 0, j = 0;
     for (i = y+1; i < y+lineas-1;i++)
     {
         mvwaddch(Wventana, i,x,linea[3]);
         mvwaddch(Wventana, i, x+columnas-1,linea[3]);
     }
+    //bucle para el suelo y techo del cuadrado
     for (j = x+1; j < x+columnas-1;j++)
     {
         mvwaddch(Wventana, y,j,linea[1]);

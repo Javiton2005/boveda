@@ -12,8 +12,9 @@
 
 void DibujarLibro(WINDOW *Wlibro)
 {
-        
     int filas, columnas;
+    // frases que imprimiremos por pantalla
+
     char frases[7][20] = {
         "Numero de Libro:",
         "Titulo del Libro:",
@@ -23,17 +24,15 @@ void DibujarLibro(WINDOW *Wlibro)
         "Editorial del Libro:",
         "Coleccion del Libro:",
     };
-    
-    start_color(); 
-
+    // Cogemos las diemnsiones de la pantalla
+    getmaxyx(Wlibro, filas, columnas); 
+    // Teñimos la pantalla
     wbkgd(Wlibro, COLOR_PAIR(9));
     
     mvwaddstr(Wlibro, 0, 29, "Gestion de Libros");
-    
-    getmaxyx(Wlibro, filas, columnas);
-    
+    // Teñimos la pantalla
     Cuadrado(Wlibro, 1,0,filas-1,columnas, SOLIDO);
-    
+    // Bucle para imprimri el texto por pantalla
     int i = 0;
     for (i = 0; i < 7; i++){
         mvwprintw(Wlibro, i+2, 2, frases[i]);

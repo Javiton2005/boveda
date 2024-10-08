@@ -39,4 +39,31 @@ out($fe), a
 data could be in 3 places.
 - Instruction Data - Immediate or literal
 - Data in the register 
-- 
+
+LD
+Out
+ADD, ADL
+SUB, SNL
+INC/DEC
+JR/JP z,nz,c,nc
+CP
+DJNZ --> DEC B + JR nz
+
+NOP -->?
+
+push/pop
+call/ret
+and/or/xor
+___
+
+Addressing modes 
+load ld a,7  ld c, 32
+
+register ld b, i           ld h, b
+
+direct Ld a, ($9000)
+
+register indirect LD (hl), c
+
+base pinter  ix 
+		   iy

@@ -13,6 +13,7 @@
 void DibujarEstadisticas(WINDOW *Westad)
 {
     int filas, columnas;
+    //frases qeu se veran por pantalla
     char frases[11][74] = {
         "Nombre del fichero:",
         "Fichas de libros:",
@@ -27,20 +28,20 @@ void DibujarEstadisticas(WINDOW *Westad)
         "Microsegundos en buscar por Arbol binario:"
     };
     
-    start_color(); 
-
+    //Teñimos la pantalla
     wbkgd(Westad, COLOR_PAIR(9));
-    
+    //Titulo
     mvwaddstr(Westad, 0, 28, "    Estadisticas    ");
-    
+    //Cogemos las medidas
     getmaxyx(Westad, filas, columnas);
-    
+    //Imprimirmos el cuadrado
     Cuadrado(Westad, 1,0,filas-1,columnas, SOLIDO);
-    
+    //Fucle para imprimir el contenido de la pantalla
     int i = 0;
     for (i = 0; i < 11; i++){
         mvwprintw(Westad, i+2, 2, frases[i]);
     }
+    // Deberia de imprimir ese escalon que aparece en el ejemplo
     attron(COLOR_PAIR(5));
     mvwprintw(Westad, 0, 0,  "                            ");
     mvwprintw(Westad, 0, 48, "                            ");

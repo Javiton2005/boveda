@@ -13,24 +13,22 @@
 void DibujarScroll(WINDOW *Wlistado)
 {
     //char libros [10][74];
-    int filas, columnas;
-    
-    start_color(); 
 
+    int filas, columnas; 
+    // Teñimos la pantalla
     wbkgd(Wlistado, COLOR_PAIR(9));
-    
-    mvwaddstr(Wlistado, 0, 29, "Listado de Libros");
-    
+    // Cogemos las dimensiones de la pantalla
     getmaxyx(Wlistado, filas, columnas);
-    
+    // Imprimirmos los marcos de la pantalla
     Cuadrado(Wlistado, 1,0,3,columnas, SOLIDO);
     Cuadrado(Wlistado, 3,0,filas-4,columnas, SOLIDO);
+    
+    //Imprimirmos el texto por la pantalla
+    mvwaddstr(Wlistado, 0, 29, "Listado de Libros");    
     
     mvwprintw(Wlistado, 2, 2, "Numero");
     mvwprintw(Wlistado, 2, 22, "Titulo");
     mvwprintw(Wlistado, 2, 58, "Autor");
-
-    // bucle para imprimir informacion;
 
     mvwprintw(Wlistado, filas - 1, 6, "ESC=Salir Flechas=Subir/Bajar AvPag/RePag=Pag siguiente/anterior");
 

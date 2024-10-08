@@ -1,0 +1,54 @@
+# file opened: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\codigo clase\codigo_clase.asm
+ 1    0000                      DEVICE ZXSPECTRUM48
+ 2    0000              	SLDOPT COMMENT WPMEM, LOGPOINT, ASSERTION
+ 3    0000                      org $8000               ; Program is located from memory address $8000 = 32768
+ 4    8000
+ 5    8000 F3           begin:          di              ; Disable Interrupts
+ 6    8001 31 00 00                     ld sp,0         ; Set stack pointer to top of ram (RAMTOP)
+ 7    8004
+ 8    8004              ;-------------------------------------------------------------------------------------------------
+ 9    8004              ; Student Code
+10    8004              ;mainloop:
+11    8004
+12    8004              ;     ld HL, $5800
+13    8004              ;     ld a, $F2
+14    8004              ;     ld(HL), a
+15    8004              ;     ;ld($5800+10*32+14), a
+16    8004
+17    8004              ;     ld HL, $5800+10*32+14
+18    8004              ;     ld b, 7
+19    8004              ;     ld DE, $21
+20    8004              ; loop:
+21    8004              ;     ld (HL),a
+22    8004              ;     add HL, DE
+23    8004              ;     DJNZ loop
+24    8004
+25    8004              ;     ;jr mainloop
+26    8004
+27    8004              mainloop:
+28    8004 3E 70            ld a, $70
+29    8006 06 01            ld b, 1
+30    8008 0E 01            ld c, 1
+31    800A 21 00 58         ld HL, $5800
+32    800D 81 81            add c,c
+33    800F 81 81            add c,c
+34    8011 81 81            add c,c
+35    8013 81 81            add c,c
+36    8015 81 81            add c,c
+37    8017
+38    8017 80 81            add b, c
+39    8019
+40    8019 16 00            ld D, 0
+41    801B 58               ld E, b
+42    801C 19               add HL, DE
+43    801D
+44    801D 77               ld (HL), a
+45    801E
+46    801E
+47    801E
+48    801E
+49    801E
+50    801E              ;-------------------------------------------------------------------------------------------------
+51    801E 18 FE        endofcode:      jr endofcode    ; Infinite loop
+52    8020
+# file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\codigo clase\codigo_clase.asm

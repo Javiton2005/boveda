@@ -12,14 +12,15 @@
 #include "Ventanas.h"
 
 void DibujarLeerAutor(WINDOW *Wautor)
-{
+{   
+    // COjemos las medidas de la ventana
     int filas, columnas;
     getmaxyx(Wautor, filas, columnas);
-    
+    //Imprimrimos el marco
     Cuadrado(Wautor, 1,0,filas-1,columnas, SOLIDO);
-    start_color(); 
+    // Teñimos la pantalla
     wbkgd(Wautor, COLOR_PAIR(9));
-
+    //Imrpirmimos por panalla
     mvwprintw(Wautor, 2, 2, "Apellidos del Autor:");
-    mvwaddstr(Wautor, 0, 28, "Busqueda por Autor");
+    mvwprintw(Wautor, 0, 28, "Busqueda por Autor");
 }

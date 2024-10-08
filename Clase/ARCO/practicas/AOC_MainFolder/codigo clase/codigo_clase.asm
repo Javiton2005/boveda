@@ -7,6 +7,45 @@ begin:          di              ; Disable Interrupts
         
 ;-------------------------------------------------------------------------------------------------
 ; Student Code
+;mainloop:
+
+;     ld HL, $5800
+;     ld a, $F2
+;     ld(HL), a
+;     ;ld($5800+10*32+14), a
+
+;     ld HL, $5800+10*32+14
+;     ld b, 7
+;     ld DE, $21
+; loop:
+;     ld (HL),a
+;     add HL, DE
+;     DJNZ loop
+    
+;     ;jr mainloop
+
+mainloop:
+    ld a, $70
+    ld b, 1
+    ld c, 1
+    ld HL, $5800
+    
+    add c,c
+    add c,c
+    add c,c
+    add c,c
+    add c,c
+
+    add b, c
+
+    ld D, 0
+    ld E, b
+    add HL, DE
+
+    ld (HL), a
+
+
+
 
 
 ;-------------------------------------------------------------------------------------------------

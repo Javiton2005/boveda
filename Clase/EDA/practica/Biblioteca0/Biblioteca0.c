@@ -6,7 +6,7 @@
  *              a las funciones principales.
  * Reglas de uso: Ejecutar sobre una ventana de "cmd" con al menos 20 filas y
  *                80 columnas. No es necesario privilegio de administración.
- * Código de Retorno: '0' si no ha habido erroresç. -1 en otro caso y el mensaje
+ * Código de Retorno: '0' si no ha habido errores. -1 en otro caso y el mensaje
  *                    de error se muestra en stderr.
  * Programador: JMSM (Sept-24)
  *****************************************/

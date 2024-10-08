@@ -49,7 +49,9 @@
 47    803F D7                   rst $10
 48    8040 3E 0D                ld a,ENTER
 49    8042 D7                   rst $10
-50    8043              ;-------------------------------------------------------------------------------------------------
-51    8043 18 FE        endofcode:      jr endofcode    ; Infinite loop
-52    8045
+C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm(50): error: Unrecognized instruction: loop
+50    8043                      loop
+51    8043              ;-------------------------------------------------------------------------------------------------
+52    8043 18 FE        endofcode:      jr endofcode    ; Infinite loop
+53    8045
 # file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm

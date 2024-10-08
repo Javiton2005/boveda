@@ -39,6 +39,6 @@ C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\
 C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|47||0|2|32831|T|
 C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|48||0|2|32832|T|
 C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|49||0|2|32834|T|
-C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|51||0|2|32835|F|endofcode
-C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|51||0|2|32835|L|,endofcode,,+used
-C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|51||0|2|32835|T|
+C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|52||0|2|32835|F|endofcode
+C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|52||0|2|32835|L|,endofcode,,+used
+C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Codigo Casa\Codigo_casa.asm|52||0|2|32835|T|

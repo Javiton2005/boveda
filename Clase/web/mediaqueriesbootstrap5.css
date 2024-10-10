@@ -1,0 +1,73 @@
+.mirow {
+    padding: .75rem;
+    padding-bottom: .75rem;
+    background-color: rgb(255,208,0);
+    border: 1px solid rgb(41, 5, 5);
+}
+.mirow > div {
+    border: 1px solid rgb(41, 5, 5);
+}
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) {
+
+}
+
+/* Small devices (landscape phones, entre 576px y 767.98px) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+
+}
+
+/* Medium devices (tablets, entre 768px y 991.98px) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+
+}
+
+/* Large devices (desktops, entre 992px y 1199.98) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+
+}
+
+/* Extra large devices (large desktops, entre 1200px y 1399.98px) */
+@media (min-width: 1200px) and (max-width: 1399.98px) {
+
+}
+
+/* Extra large devices (large desktops, 1400px and up) */
+@media (min-width: 1400px) {
+
+}
+
+/*----------------------------------------------------------------*/
+/*----------media queries con min-with----------------------------*/
+/*----------------------------------------------------------------*/
+
+
+
+/* X-Small devices (portrait phones, less than 576px) */
+/* No media query for `xs` since this is the default in Bootstrap */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+
+}
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* X-Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* XX-Large devices (larger desktops, 1400px and up) */
+@media (min-width: 1400px) {
+  
+}

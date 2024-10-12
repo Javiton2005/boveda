@@ -1,31 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Primer intento de boostrap</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="./mediaqueriesbootstrap5.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ejercicio Bootstrap 5</title>
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link href="./Bootstrap.css" rel="stylesheet">
 </head>
 <body>
 
-    <h1>Mi primer ejemplo de bootstrap</h1>
+  <!-- Título principal -->
+  <h1>Ejercicio Bootstrap 5</h1>
 
-    <div class="container text-center">
-        <div class="row mirow">
-            <div class="col micol">
-                colum
-            </div>
-            <div class="col">
-                colum
-            </div>
-            <div class="col">
-                colum
-            </div>
-        </div>
+  <!-- Información del alumno -->
+  <div class="student-info">
+    <p>Javier Antón Ordóñez</p>
+    <p>Curso: Desarrollo Web, Grupo: 2A</p>
+  </div>
 
+  <!-- Contenido -->
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-md-12 content-item">
+        
+        <img src="https://via.placeholder.com/400" alt="Imagen 1">
+        <p>Este es el contenido del primer elemento. Es una breve descripción para mostrar el uso de Bootstrap.</p>
+      </div>
+      <div class="col-lg-6 col-md-12 content-item" style="margin-top: 20px;">
+        <img src="https://via.placeholder.com/400" alt="Imagen 2">
+        <p>Este es el contenido del segundo elemento. Otro texto breve para mostrar la estructura.</p>
+      </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 
+    <div class="row">
+      <div class="col-lg-6 col-md-12 content-item">
+        <img src="https://via.placeholder.com/400" alt="Imagen 3">
+        <p>Este es el contenido del tercer elemento. Sigue el patrón de diseño adaptable.</p>
+      </div>
+      <div class="col-lg-6 col-md-12 content-item" style="margin-top: 20px;">
+        <img src="https://via.placeholder.com/400" alt="Imagen 4">
+        <p>Este es el contenido del cuarto elemento. La imagen se ajusta según la pantalla.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

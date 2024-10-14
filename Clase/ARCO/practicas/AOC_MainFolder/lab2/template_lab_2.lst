@@ -1,0 +1,53 @@
+# file opened: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab2\template_lab_2.asm
+ 1    0000                      DEVICE ZXSPECTRUM48
+ 2    0000              	SLDOPT COMMENT WPMEM, LOGPOINT, ASSERTION
+ 3    0000                      org $8000               ; Program is located from memory address $8000 = 32768
+ 4    8000
+ 5    8000 F3           begin:          di              ; Disable Interrupts
+ 6    8001 31 00 00                     ld sp,0         ; Set stack pointer to top of ram (RAMTOP)
+ 7    8004
+ 8    8004              ;-------------------------------------------------------------------------------------------------
+ 9    8004              ; Student Code
+10    8004
+11    8004              mainloop:
+12    8004                  ; = $5800 + y*32 + x
+13    8004                  ; b = x
+14    8004                  ; c = y
+15    8004                  ; hl = 5800 + c*32 + b
+16    8004 D5               push DE
+17    8005 F5               push AF
+18    8006 E5               push HL
+19    8007 06 01            ld b, 1
+20    8009 0E 03            ld c, 3
+21    800B CD 10 80         call XY2MEM
+22    800E
+23    800E
+24    800E
+25    800E
+26    800E
+27    800E              ;-------------------------------------------------------------------------------------------------
+28    800E 18 FE        endofcode:      jr endofcode    ; Infinite loop
+29    8010
+30    8010              XY2MEM:
+31    8010 21 00 58             ld HL, $5800
+32    8013 3E 00                ld a, 0
+33    8015
+34    8015 81                   add c
+35    8016 81                   add c
+36    8017 81                   add c
+37    8018 81                   add c
+38    8019 81                   add c
+39    801A
+40    801A 16 00                ld D, 0
+41    801C 59                   ld E, c
+42    801D
+43    801D 83 80                add E, b
+44    801F
+45    801F 19                   add HL, DE
+46    8020
+47    8020 36 70                ld (HL), $70
+48    8022                      ;out($fe), a
+49    8022
+50    8022 C9                   ret
+51    8023
+# file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab2\template_lab_2.asm

@@ -17,36 +17,53 @@
 <body>
 
   <!-- Título principal -->
-  <h1>Ejercicio Bootstrap 5</h1>
+  <h1 class="text-center">Ejercicio Bootstrap 5</h1>
 
   <!-- Información del alumno -->
-  <div class="student-info">
-    <p>Javier Antón Ordóñez</p>
-    <p>Curso: Desarrollo Web, Grupo: 2A</p>
+  <div class="container mb-4">
+    <div class="row">
+      <div class="col-6 text-start">
+        <p>Javier Antón Ordóñez</p>
+      </div>
+      <div class="col-6 text-end">
+        <p>Curso: Desarrollo Web, Grupo: 2A</p>
+      </div>
+    </div>
   </div>
 
   <!-- Contenido -->
   <div class="container">
-    <div class="row">
-      <div class="col-lg-6 col-md-12 content-item">
-        
-        <img src="https://via.placeholder.com/400" alt="Imagen 1">
-        <p>Este es el contenido del primer elemento. Es una breve descripción para mostrar el uso de Bootstrap.</p>
+    <div class="row mb-4">
+      <div class="col-lg-6 col-md-12 content-item d-flex flex-column">
+        <h2>Título 1</h2>
+        <div class="d-flex align-items-center flex-md-row flex-column">
+          <img src="https://via.placeholder.com/400" alt="Imagen 1" class="img-fluid mb-3 mb-md-0">
+          <p class="ms-md-3">Este es el contenido del primer elemento. Es una breve descripción para mostrar el uso de Bootstrap.</p>
+        </div>
       </div>
-      <div class="col-lg-6 col-md-12 content-item" style="margin-top: 20px;">
-        <img src="https://via.placeholder.com/400" alt="Imagen 2">
-        <p>Este es el contenido del segundo elemento. Otro texto breve para mostrar la estructura.</p>
+      <div class="col-lg-6 col-md-12 content-item d-flex flex-column">
+        <h2>Título 2</h2>
+        <div class="d-flex align-items-center flex-md-row flex-column">
+          <img src="https://via.placeholder.com/400" alt="Imagen 2" class="img-fluid mb-3 mb-md-0">
+          <p class="ms-md-3">Este es el contenido del segundo elemento. Otro texto breve para mostrar la estructura.</p>
+        </div>
       </div>
     </div>
 
-    <div class="row">
-      <div class="col-lg-6 col-md-12 content-item">
-        <img src="https://via.placeholder.com/400" alt="Imagen 3">
-        <p>Este es el contenido del tercer elemento. Sigue el patrón de diseño adaptable.</p>
+    <div class="row mb-4">
+      <div class="col-lg-6 col-md-12 content-item d-flex flex-column">
+        <h2>Título 3</h2>
+        <div class="d-flex align-items-center flex-md-row flex-column">
+          <img src="https://via.placeholder.com/400" alt="Imagen 3" class="img-fluid mb-3 mb-md-0">
+          <p class="ms-md-3">Este es el contenido del tercer elemento. Sigue el patrón de diseño adaptable.</p>
+        </div>
       </div>
-      <div class="col-lg-6 col-md-12 content-item" style="margin-top: 20px;">
-        <img src="https://via.placeholder.com/400" alt="Imagen 4">
-        <p>Este es el contenido del cuarto elemento. La imagen se ajusta según la pantalla.</p>
+      <div class="col-lg-6 col-md-12 content-item d-flex flex-column">
+        <h2>Título 4</h2>
+        <div class="d-flex align-items-center flex-md-row flex-column">
+          <img src="https://via.placeholder.com/400" alt="Imagen 4" class="img-fluid mb-3 mb-md-0">
+          <p class="ms-md-3">Este es el contenido del cuarto elemento. La imagen se ajusta según la pantalla.</p>
+        </div>
       </div>
     </div>
   </div>

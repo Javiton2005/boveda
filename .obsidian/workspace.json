@@ -6,6 +6,7 @@
       {
         "id": "4e1d9f275dd8be6b",
         "type": "tabs",
+        "dimension": 46.433378196500676,
         "children": [
           {
             "id": "838d554ce3f7d255",
@@ -16,6 +17,23 @@
                 "file": "Clase/ARCO/Topic 2.md",
                 "mode": "source",
                 "source": false
+              }
+            }
+          }
+        ]
+      },
+      {
+        "id": "0fd3f6c17ba63561",
+        "type": "tabs",
+        "dimension": 53.566621803499324,
+        "children": [
+          {
+            "id": "d48df9de84e48c37",
+            "type": "leaf",
+            "state": {
+              "type": "pdf",
+              "state": {
+                "file": "Clase/ARCO/AOC_T2_EN.pdf"
               }
             }
           }
@@ -48,7 +66,7 @@
             "state": {
               "type": "search",
               "state": {
-                "query": "adress",
+                "query": "tag:#Number",
                 "matchingCase": false,
                 "explainSearch": false,
                 "collapseAll": false,
@@ -65,11 +83,13 @@
               "state": {}
             }
           }
-        ]
+        ],
+        "currentTab": 1
       }
     ],
     "direction": "horizontal",
-    "width": 266.5079231262207
+    "width": 266.5079231262207,
+    "collapsed": true
   },
   "right": {
     "id": "7aa8b9c82780db22",
@@ -106,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clase/ARCO/Topic 2.md"
+                "file": "Clase/ARCO/AOC_T2_EN.pdf"
               }
             }
           },
@@ -116,7 +136,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clase/ARCO/Topic 2.md",
+                "file": "Clase/ARCO/AOC_T2_EN.pdf",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -133,7 +153,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Clase/ARCO/Topic 2.md",
+                "file": "Clase/ARCO/AOC_T2_EN.pdf",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -151,7 +171,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Clase/ARCO/Topic 2.md",
+                "file": "Clase/ARCO/AOC_T2_EN.pdf",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -184,7 +204,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 373.5
+    "width": 373.5,
+    "collapsed": true
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -196,37 +217,37 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "838d554ce3f7d255",
+  "active": "d48df9de84e48c37",
   "lastOpenFiles": [
-    "Pasted image 20241009200543.png",
-    "Pasted image 20241009200530.png",
-    "Pasted image 20241009200522.png",
-    "Pasted image 20241009200030.png",
     "Clase/ARCO/Topic 2.md",
+    "Clase/ARCO/AOC_T2_EN.pdf",
+    "Img",
     "Clase/ARCO/Clase del dia 03-09-2024.md",
+    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.bin",
+    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.sld",
+    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.lst",
+    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.asm",
+    "Clase/ARCO/practicas/AOC_MainFolder/Lab_0/Template_Lab_0.asm",
+    "Clase/ARCO/practicas/AOC_MainFolder/lab2/Template_Lab_0.asm",
+    "Clase/ARCO/practicas/AOC_MainFolder/lab2",
+    "Clase/ARCO/practicas/AOC_MainFolder/Lab_0/lab2",
+    "Img/Pasted image 20241009200543.png",
+    "Img/Pasted image 20241009200530.png",
+    "Img/Pasted image 20241009200522.png",
+    "Img/Pasted image 20241009200030.png",
     "Clase/ARCO/Machine instruction characteristics.md",
     "Clase/ARCO/- Machine instruction characteristics.md",
-    "Clase/ARCO/pdfs",
     "Clase/ARCO/Untitled.md",
     "Clase/ARCO/Basic instructions.md",
     "Clase/ARCO/Apuntes casa zx80.md",
     "Clase/ARCO/Primera practica.md",
     "Clase/ARCO/exercices/exercices 2/Exercice.md",
     "Clase/EDA/teoria/Clase practica 1.md",
-    "Clase/ARCO/exercices/exercices 2/Topic 2 Questions (Z80)_EN.pdf",
-    "Clase/EDA/practica/Ejercicios de practica/a.exe",
-    "Clase/EDA/practica/Ejercicios de practica/ejercios_clase.c",
-    "Clase/EDA/practica/Ejercicios de practica",
-    "Clase/EDA/practica/Nueva carpeta",
-    "Pasted image 20241007181354.png",
-    "Clase/ARCO/practicas/AOC_MainFolder/codigo clase/codigo_clase.bin",
-    "Clase/ARCO/practicas/AOC_MainFolder/codigo clase/codigo_clase.sld",
-    "Clase/ARCO/practicas/AOC_MainFolder/codigo clase/codigo_clase.lst",
-    "Clase/ARCO/practicas/AOC_MainFolder/Codigo Casa/Codigo_casa.asm",
+    "Img/Pasted image 20241007181354.png",
     "Clase/ARCO/exercices/exercice 1/Exercices.md",
     "Clase/Antropology/class.md",
     "Clase/EDA/teoria/Memoria en C.md",
-    "Pasted image 20241003123555.png",
+    "Img/Pasted image 20241003123555.png",
     "template/Business idea.md",
     "template/School note template.md",
     "template/Apuntes.md",

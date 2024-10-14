@@ -8,18 +8,43 @@ begin:          di              ; Disable Interrupts
 ;-------------------------------------------------------------------------------------------------
 ; Student Code
 
-    
+mainloop:
+    ; = $5800 + y*32 + x
+    ; b = x
+    ; c = y
+    ; hl = 5800 + c*32 + b
+    push DE
+    push AF
+    push HL
+    ld b, 1
+    ld c, 3
+    call XY2MEM
 
 
-        ld HL, $5800
-l1:     ld BC, $FBFE     
-        in A,(C)
-        BIT 3, a
-        JR NZ, l1
-        ld A ,$70 ;$3E01
-        ld(HL), A
-        inc HL
-l2: DJNZ l2
-        jp l1
+
+
+
 ;-------------------------------------------------------------------------------------------------
 endofcode:      jr endofcode    ; Infinite loop
+
+XY2MEM:
+        ld HL, $5800
+        ld a, 0
+
+        add c
+        add c
+        add c
+        add c
+        add c
+
+        ld D, 0
+        ld E, c
+
+        add E, b
+        
+        add HL, DE
+
+        ld (HL), $70
+        ;out($fe), a
+
+        ret

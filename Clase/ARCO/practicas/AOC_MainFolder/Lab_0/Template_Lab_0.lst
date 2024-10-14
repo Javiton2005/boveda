@@ -11,14 +11,17 @@
 10    8004
 11    8004
 12    8004
-13    8004              mainloop:
-14    8004 3E 01            ld a ,1 ;$3E01
-15    8006 D3 FE            out($fe), a
-16    8008 3E 03            ld a ,3
-17    800A D3 FE            out($fe), a
-18    800C 3E 02            ld a, 2
-19    800E D3 FE            out($fe), a
-20    8010 C3 04 80         jp mainloop
-21    8013              ;-------------------------------------------------------------------------------------------------
-22    8013 18 FE        endofcode:      jr endofcode    ; Infinite loop
+13    8004
+14    8004 21 00 58             ld HL, $5800
+15    8007 01 FE FB     l1:     ld BC, $FBFE
+16    800A ED 78                in A,(C)
+17    800C CB 5F                BIT 3, a
+18    800E 20 F7                JR NZ, l1
+19    8010 3E 70                ld A ,$70 ;$3E01
+20    8012 77                   ld(HL), A
+21    8013 23                   inc HL
+22    8014 10 FE        l2: DJNZ l2
+23    8016 C3 07 80             jp l1
+24    8019              ;-------------------------------------------------------------------------------------------------
+25    8019 18 FE        endofcode:      jr endofcode    ; Infinite loop
 # file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\Lab_0\Template_Lab_0.asm

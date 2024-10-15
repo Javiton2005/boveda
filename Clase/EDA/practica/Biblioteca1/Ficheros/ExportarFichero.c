@@ -13,7 +13,24 @@
 
 void ExportarFichero(LIBRO **Fichas,WINDOW *Wfichero)
 {
-   
-    // Código del alumno
-    
+    int len_array=sizeof(*Fichas)/sizeof(LIBRO);
+    int i = 0;
+    FILE *archivo = fopen("exportar_archivo.csv", 'w');
+    for (i = 0; i < len_array; i++){
+        /*
+            Titulo;
+            Autor - Apellido;
+            Autor - Nombre;
+            Genero;
+            Editorial;
+            Coleccion
+        */
+        fprintf(archivo, "%s;", *Fichas[i]->Titulo);
+        fprintf(archivo, "%s;", *Fichas[i]->ApellAutor);
+        fprintf(archivo, "%s;", *Fichas[i]->NomAutor);
+        fprintf(archivo, "%s;", *Fichas[i]->Genero);
+        fprintf(archivo, "%s;", *Fichas[i]->Editorial);
+        fprintf(archivo, "%s\n", *Fichas[i]->Coleccion);
+    }
+    fclose(archivo);
 }

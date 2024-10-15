@@ -12,7 +12,6 @@
 
 int DifTiempo(struct timeval inicio,struct timeval fin)
 {
-    
-    // Codigo del alumno
-    
+
+    return (fin.tv_sec - inicio.tv_sec)*1000000;
 }

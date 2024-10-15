@@ -1,0 +1,15 @@
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\bin\Debug\net8.0\Biblioteca1-INF.exe
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\bin\Debug\net8.0\Biblioteca1-INF.deps.json
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\bin\Debug\net8.0\Biblioteca1-INF.runtimeconfig.json
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\bin\Debug\net8.0\Biblioteca1-INF.dll
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\bin\Debug\net8.0\Biblioteca1-INF.pdb
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.AssemblyInfoInputs.cache
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.AssemblyInfo.cs
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.csproj.CoreCompileInputs.cache
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.sourcelink.json
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.dll
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\refint\Biblioteca1-INF.dll
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.pdb
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\Biblioteca1-INF.genruntimeconfig.cache
+C:\Users\javit\Documents\boveda\Clase\EDA\practica\Biblioteca1\c#\Biblioteca1-INF\Biblioteca1-INF\obj\Debug\net8.0\ref\Biblioteca1-INF.dll

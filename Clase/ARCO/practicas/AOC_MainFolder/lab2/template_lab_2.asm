@@ -13,13 +13,11 @@ mainloop:
     ; b = x
     ; c = y
     ; hl = 5800 + c*32 + b
-    push DE
-    push AF
-    push HL
-    ld b, 1
+    ld e, 3
     ld c, 3
-    call XY2MEM
 
+    call XY2MEM
+    out (hl), $70
 
 
 
@@ -28,23 +26,16 @@ mainloop:
 endofcode:      jr endofcode    ; Infinite loop
 
 XY2MEM:
-        ld HL, $5800
-        ld a, 0
+        ld hl, bc
+        add hl, hl
+        add hl, hl
+        add hl, hl
+        add hl, hl
+        add hl, hl
 
-        add c
-        add c
-        add c
-        add c
-        add c
+        add hl, de
+        ld de, $5800
 
-        ld D, 0
-        ld E, c
-
-        add E, b
-        
-        add HL, DE
-
-        ld (HL), $70
-        ;out($fe), a
+        add hl, de
 
         ret

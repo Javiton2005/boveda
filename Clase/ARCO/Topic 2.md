@@ -101,6 +101,9 @@ Data can be found in three different places
 ### Machine Format
 ### CISC and RISC architecture philosophies
 
+----
+Clase apuntes rapidos
+
 PC Program Counter internal register of the processor used to manage the implicit sequencing of introducing.
 Donde esta la siguiente instrucción.
 
@@ -129,4 +132,6 @@ Six basic Elements:
 Addressees
 	The z80 is 1 address.
 	0 addresses use the stack 
-	
+
+it is better to push thing to the stack from the right side of the operation
+base + display ment

@@ -1,0 +1,37 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\javit\\Documents\\boveda\\Clase\\EDA\\practica\\Biblioteca1\\c#\\Biblioteca1-INF\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{6C5C211F-2473-486B-A5F9-1E421C944A50}|Biblioteca1-INF\\Biblioteca1-INF.csproj|c:\\users\\javit\\documents\\boveda\\clase\\eda\\practica\\biblioteca1\\c#\\biblioteca1-inf\\biblioteca1-inf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{6C5C211F-2473-486B-A5F9-1E421C944A50}|Biblioteca1-INF\\Biblioteca1-INF.csproj|solutionrelative:biblioteca1-inf\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\javit\\Documents\\boveda\\Clase\\EDA\\practica\\Biblioteca1\\c#\\Biblioteca1-INF\\Biblioteca1-INF\\Program.cs",
+              "RelativeDocumentMoniker": "Biblioteca1-INF\\Program.cs",
+              "ToolTip": "C:\\Users\\javit\\Documents\\boveda\\Clase\\EDA\\practica\\Biblioteca1\\c#\\Biblioteca1-INF\\Biblioteca1-INF\\Program.cs",
+              "RelativeToolTip": "Biblioteca1-INF\\Program.cs",
+              "ViewState": "AQIAADIAAAAAAAAAAAAwwD8AAAApAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-15T07:07:19.619Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

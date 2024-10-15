@@ -4,36 +4,18 @@
     "type": "split",
     "children": [
       {
-        "id": "4e1d9f275dd8be6b",
+        "id": "105334a5d00dec7a",
         "type": "tabs",
-        "dimension": 46.433378196500676,
         "children": [
           {
-            "id": "838d554ce3f7d255",
+            "id": "c1ef7120d75caffa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Clase/ARCO/Topic 2.md",
+                "file": "Clase/EDA/teoria/Tipo abstracto de dato.md",
                 "mode": "source",
                 "source": false
-              }
-            }
-          }
-        ]
-      },
-      {
-        "id": "0fd3f6c17ba63561",
-        "type": "tabs",
-        "dimension": 53.566621803499324,
-        "children": [
-          {
-            "id": "d48df9de84e48c37",
-            "type": "leaf",
-            "state": {
-              "type": "pdf",
-              "state": {
-                "file": "Clase/ARCO/AOC_T2_EN.pdf"
               }
             }
           }
@@ -83,13 +65,11 @@
               "state": {}
             }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "horizontal",
-    "width": 266.5079231262207,
-    "collapsed": true
+    "width": 266.5079231262207
   },
   "right": {
     "id": "7aa8b9c82780db22",
@@ -126,7 +106,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "Clase/ARCO/AOC_T2_EN.pdf"
+                "file": "Clase/EDA/teoria/Tipo abstracto de dato.md"
               }
             }
           },
@@ -136,7 +116,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "Clase/ARCO/AOC_T2_EN.pdf",
+                "file": "Clase/EDA/teoria/Tipo abstracto de dato.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -153,7 +133,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "Clase/ARCO/AOC_T2_EN.pdf",
+                "file": "Clase/EDA/teoria/Tipo abstracto de dato.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -171,7 +151,7 @@
             "state": {
               "type": "localgraph",
               "state": {
-                "file": "Clase/ARCO/AOC_T2_EN.pdf",
+                "file": "Clase/EDA/teoria/Tipo abstracto de dato.md",
                 "options": {
                   "collapse-filter": true,
                   "search": "",
@@ -204,8 +184,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 373.5,
-    "collapsed": true
+    "width": 373.5
   },
   "left-ribbon": {
     "hiddenItems": {
@@ -217,31 +196,34 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "d48df9de84e48c37",
+  "active": "c1ef7120d75caffa",
   "lastOpenFiles": [
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0/Biblioteca1-INF.assets.cache",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0/Biblioteca1-INF.AssemblyInfo.cs",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0/Biblioteca1-INF.AssemblyInfoInputs.cache",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0/refint",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0/ref",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0/Biblioteca1-INF.GlobalUsings.g.cs",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0/Biblioteca1-INF.GeneratedMSBuildEditorConfig.editorconfig",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug/net8.0",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj/Debug",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/obj",
+    "Clase/EDA/practica/Biblioteca1/c#/Biblioteca1-INF/Biblioteca1-INF/bin/Debug/net8.0",
+    "Clase/EDA/teoria/Tipo abstracto de dato.md",
+    "Clase/ARCO/exercices/exercices 2/Exercice.md",
     "Clase/ARCO/Topic 2.md",
-    "Clase/ARCO/AOC_T2_EN.pdf",
-    "Img",
+    "Untitled 1.canvas",
+    "Clase/ARCO/Untitled.md",
     "Clase/ARCO/Clase del dia 03-09-2024.md",
-    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.bin",
-    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.sld",
-    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.lst",
-    "Clase/ARCO/practicas/AOC_MainFolder/lab2/template_lab_2.asm",
-    "Clase/ARCO/practicas/AOC_MainFolder/Lab_0/Template_Lab_0.asm",
-    "Clase/ARCO/practicas/AOC_MainFolder/lab2/Template_Lab_0.asm",
-    "Clase/ARCO/practicas/AOC_MainFolder/lab2",
-    "Clase/ARCO/practicas/AOC_MainFolder/Lab_0/lab2",
     "Img/Pasted image 20241009200543.png",
     "Img/Pasted image 20241009200530.png",
     "Img/Pasted image 20241009200522.png",
     "Img/Pasted image 20241009200030.png",
     "Clase/ARCO/Machine instruction characteristics.md",
     "Clase/ARCO/- Machine instruction characteristics.md",
-    "Clase/ARCO/Untitled.md",
     "Clase/ARCO/Basic instructions.md",
     "Clase/ARCO/Apuntes casa zx80.md",
     "Clase/ARCO/Primera practica.md",
-    "Clase/ARCO/exercices/exercices 2/Exercice.md",
     "Clase/EDA/teoria/Clase practica 1.md",
     "Img/Pasted image 20241007181354.png",
     "Clase/ARCO/exercices/exercice 1/Exercices.md",
@@ -260,7 +242,6 @@
     "Apuntes/C/Inicio.md",
     "Untitled.canvas",
     "Clase/ARCO/Arco.md",
-    "2024-09-26.md",
     "template/Sin título.canvas"
   ]
 }

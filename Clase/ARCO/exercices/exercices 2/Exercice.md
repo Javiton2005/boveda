@@ -53,9 +53,10 @@ f) ld a, 30 --> MEM[30] = 50 --> MEM[50] = 70 --> 70
 ; y --> 0xC002
 
 ld a, (0xC001)
+ld a, b
 ld b, (0xC002)
 
-add a,b
+add a,b   no esta mal pero deberia de ser add b
 ld (0xC000), a
 ```
 6:

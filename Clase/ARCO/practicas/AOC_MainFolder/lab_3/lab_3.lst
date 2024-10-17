@@ -1,0 +1,146 @@
+# file opened: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab_3\lab_3.asm
+ 1    0000                      DEVICE ZXSPECTRUM48
+ 2    0000                      SLDOPT COMMENT WPMEM, LOGPOINT, ASSERTION
+ 3    0000                      org $8000               ; Program is located from memory address $8000 = 32768
+ 4    8000
+ 5    8000 F3           begin:          di              ; Disable Interrupts
+ 6    8001 31 00 00                     ld sp,0      ; Set stack pointer to top of ram (RAMTOP)
+ 7    8004
+ 8    8004              ;-------------------------------------------------------------------------------------------------
+ 9    8004              ; Student Code
+10    8004              mainloop:
+11    8004 1E 03                ld e, 3
+12    8006 0E 03                ld c, 3
+13    8008
+14    8008 3E 03                ld a, 3;$4d
+15    800A CD 1C 80             call XY2MEM
+16    800D
+C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab_3\lab_3.asm(17): warning: value 0x8031 is truncated to 8bit value: 0x31
+17    800D 36 31                ld (hl), UFVLogo
+18    800F 23                   inc hl
+19    8010 77                   ld (hl), a
+20    8011                      ;ld hl, $594f
+21    8011 06 02                ld b, 2
+22    8013 11 01 00             ld de, 1
+23    8016 77           loop:   ld (hl), a
+24    8017 19                   add hl, de
+25    8018 10 FC                djnz loop
+26    801A                      ;jr mainloop
+27    801A              ;-------------------------------------------------------------------------------------------------
+28    801A              endofcode:
+29    801A 18 FE                jr endofcode
+30    801C
+31    801C                      include "XY2MEM.asm"
+# file opened: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab_3\XY2MEM.asm
+ 1+   801C              ;Receives X in B and Y in C. Returns HL pointing to attribute memory
+ 2+   801C              XY2MEM:
+ 3+   801C F5               push af
+ 4+   801D D5               push de
+ 5+   801E
+ 6+   801E 26 00            ld h,0
+ 7+   8020 69               ld l,c
+ 8+   8021 29               add hl, hl
+ 9+   8022 29               add hl, hl
+10+   8023 29               add hl, hl
+11+   8024 29               add hl, hl
+12+   8025 29               add hl, hl
+13+   8026
+14+   8026 16 00            ld d,0
+15+   8028 58               ld e,b
+16+   8029 19               add hl, de
+17+   802A 11 00 58         ld de, $5800
+18+   802D
+19+   802D 19               add hl, de
+20+   802E
+21+   802E D1               pop de
+22+   802F F1               pop af
+23+   8030
+24+   8030 C9               ret
+# file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab_3\XY2MEM.asm
+32    8031                      include "demo_level.asm"
+# file opened: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab_3\demo_level.asm
+ 1+   8031              ;--------------------------------------------------------------------------------------
+ 2+   8031              ; Arkanoid generated levels from text file - Demo Level
+ 3+   8031              ; Converter in Python by Daniel Leon (UFV) for AOC 2024/2025
+ 4+   8031              ;--------------------------------------------------------------------------------------
+ 5+   8031              ; MAP ENCODING:
+ 6+   8031              ;   Byte 0      : Number of destructible bricks
+ 7+   8031              ;   Variable size lines - for each line:
+ 8+   8031              ;       Byte 0        : Y Coordinate for row
+ 9+   8031              ;       Byte 1        : Number of elements in row
+10+   8031              ;       Bytes 2..n-1  : color of brick  (0..8)
+11+   8031              ;               color=8 means indestructible brick
+12+   8031              ;               color=0 means no brick
+13+   8031              ;  Last Byte          : Trying to read a line with Y coordinate=255 means end of map
+14+   8031              ;--------------------------------------------------------------------------------------
+15+   8031
+16+   8031
+17+   8031              UFVLogo:
+18+   8031 99                   DEFB 153
+19+   8032 03 0E 00 01          DEFB 3 , 14, 0, 1, 1, 1, 1, 1, 1, 0, 1, 1, 1, 1, 1, 1
+19+   8036 01 01 01 01
+19+   803A 01 00 01 01
+19+   803E 01 01 01 01
+20+   8042 04 0E 00 01          DEFB 4 , 14, 0, 1, 7, 7, 7, 7, 1, 0, 1, 7, 7, 7, 7, 1
+20+   8046 07 07 07 07
+20+   804A 01 00 01 07
+20+   804E 07 07 07 01
+21+   8052 05 0E 00 01          DEFB 5 , 14, 0, 1, 7, 7, 7, 7, 1, 0, 1, 7, 7, 7, 7, 1
+21+   8056 07 07 07 07
+21+   805A 01 00 01 07
+21+   805E 07 07 07 01
+22+   8062 06 0E 00 01          DEFB 6 , 14, 0, 1, 1, 7, 7, 1, 1, 0, 1, 1, 7, 7, 1, 1
+22+   8066 01 07 07 01
+22+   806A 01 00 01 01
+22+   806E 07 07 01 01
+23+   8072 07 0D 00 00          DEFB 7 , 13, 0, 0, 1, 7, 7, 1, 0, 0, 0, 1, 7, 7, 1
+23+   8076 01 07 07 01
+23+   807A 00 00 00 01
+23+   807E 07 07 01
+24+   8081 08 0D 00 00          DEFB 8 , 13, 0, 0, 1, 7, 7, 1, 0, 0, 0, 1, 7, 7, 1
+24+   8085 01 07 07 01
+24+   8089 00 00 00 01
+24+   808D 07 07 01
+25+   8090 09 0D 00 00          DEFB 9 , 13, 0, 0, 1, 7, 7, 1, 0, 0, 0, 1, 7, 7, 1
+25+   8094 01 07 07 01
+25+   8098 00 00 00 01
+25+   809C 07 07 01
+26+   809F 0A 0D 00 00          DEFB 10, 13, 0, 0, 1, 7, 7, 1, 0, 0, 0, 1, 7, 7, 1
+26+   80A3 01 07 07 01
+26+   80A7 00 00 00 01
+26+   80AB 07 07 01
+27+   80AE 0B 0D 00 00          DEFB 11, 13, 0, 0, 1, 7, 7, 1, 0, 0, 0, 1, 7, 7, 1
+27+   80B2 01 07 07 01
+27+   80B6 00 00 00 01
+27+   80BA 07 07 01
+28+   80BD 0C 0D 00 00          DEFB 12, 13, 0, 0, 1, 7, 7, 1, 0, 0, 0, 1, 7, 7, 1
+28+   80C1 01 07 07 01
+28+   80C5 00 00 00 01
+28+   80C9 07 07 01
+29+   80CC 0D 0D 00 00          DEFB 13, 13, 0, 0, 1, 7, 7, 1, 0, 0, 0, 1, 7, 7, 1
+29+   80D0 01 07 07 01
+29+   80D4 00 00 00 01
+29+   80D8 07 07 01
+30+   80DB 0E 0D 00 00          DEFB 14, 13, 0, 0, 1, 7, 7, 1, 1, 1, 1, 1, 7, 7, 1
+30+   80DF 01 07 07 01
+30+   80E3 01 01 01 01
+30+   80E7 07 07 01
+31+   80EA 0F 0D 00 00          DEFB 15, 13, 0, 0, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1
+31+   80EE 01 07 07 07
+31+   80F2 07 07 07 07
+31+   80F6 07 07 01
+32+   80F9 10 0D 00 00          DEFB 16, 13, 0, 0, 1, 7, 7, 7, 7, 7, 7, 7, 7, 7, 1
+32+   80FD 01 07 07 07
+32+   8101 07 07 07 07
+32+   8105 07 07 01
+33+   8108 11 0C 00 00          DEFB 17, 12, 0, 0, 0, 1, 7, 7, 7, 7, 7, 7, 7, 1
+33+   810C 00 01 07 07
+33+   8110 07 07 07 07
+33+   8114 07 01
+34+   8116 12 0B 00 00          DEFB 18, 11, 0, 0, 0, 0, 1, 1, 1, 1, 1, 1, 1
+34+   811A 00 00 01 01
+34+   811E 01 01 01 01
+34+   8122 01
+35+   8123 FF                   DEFB 255
+# file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab_3\demo_level.asm
+# file closed: C:\Users\javit\Documents\boveda\Clase\ARCO\practicas\AOC_MainFolder\lab_3\lab_3.asm
